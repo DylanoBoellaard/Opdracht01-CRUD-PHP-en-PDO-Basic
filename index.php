@@ -22,22 +22,22 @@
         <input type="text" id="lastname" name="lastname"><br>
         <br>
         <label for="phone">Mobiel</label><br>
-        <input type="text" id="phone" name="phone">
+        <input type="text" id="phone" name="phone"><br>
         <br>
         <label for="street">Straatnaam</label><br>
-        <input type="text" id="street" name="street">
+        <input type="text" id="street" name="street"><br>
         <br>
         <label for="house">Huisnummer</label><br>
-        <input type="text" id="house" name="house">
+        <input type="text" id="house" name="house"><br>
         <br>
         <label for="residence">Woonplaats</label><br>
-        <input type="text" id="residence" name="residence">
+        <input type="text" id="residence" name="residence"><br>
         <br>
         <label for="zipcode">Postcode</label><br>
-        <input type="text" id="zipcode" name="zipcode">
+        <input type="text" id="zipcode" name="zipcode"><br>
         <br>
         <label for="country">Landnaam</label><br>
-        <input type="text" id="country" name="country">
+        <input type="text" id="country" name="country"><br>
         <br>
         <input type="submit" value="Verstuur">
     </form>
