@@ -88,8 +88,8 @@ var_dump($result);
         <label for="lastname">Achternaam:</label><br>
         <input type="text" id="lastname" name="lastname" value="<?= $result->AN ?>"><br>
         <br>
-        <label for="mobiel">Telefoonnummer:</label>
-        <input type="text" id="mobiel" name="phone" value="<?= $result-> MB?>"><br>
+        <label for="phone">Telefoonnummer:</label>
+        <input type="text" id="phone" name="phone" value="<?= $result-> MB?>"><br>
         <br>
         <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
         <input type="submit" value="Verstuur">

@@ -61,7 +61,7 @@
     }
 ?>
 
-<a href="index.html">Home page</a>
+<a href="index.php">Home page</a>
 <h3>Persoonsgegevens</h3>
 <a href="index.php"><input type="button" value="Nieuw persoon"></a>
 <br><br>

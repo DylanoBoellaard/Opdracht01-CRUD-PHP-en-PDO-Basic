@@ -24,6 +24,9 @@
         <label for="phone">Mobiel</label><br>
         <input type="text" id="phone" name="phone">
         <br>
+        <label for="street">Straatnaam</label><br>
+        <input type="text" id="street" name="street">
+        <br>
         <input type="submit" value="Verstuur">
 
     </form>
