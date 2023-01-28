@@ -25,7 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     Mobiel = :Mobiel,
                     Straatnaam = :Straatnaam,
                     Huisnummer = :Huisnummer,
-                    Woonplaats = :Woonplaats
+                    Woonplaats = :Woonplaats,
+                    Postcode = :Postcode
 
                 WHERE Id = :Id";
 
@@ -38,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $statement->bindValue(':Straatnaam', $_POST['street'], PDO::PARAM_STR);
         $statement->bindValue(':Huisnummer', $_POST['house'], PDO::PARAM_STR);
         $statement->bindValue(':Woonplaats', $_POST['residence'], PDO::PARAM_STR);
+        $statement->bindValue(':Postcode', $_POST['zipcode'], PDO::PARAM_STR);
 
         $statement->execute();
 
@@ -57,6 +59,7 @@ $sql = "SELECT Id
               ,Straatnaam as ST
               ,Huisnummer as HN
               ,Woonplaats as WP
+              ,Postcode as PC
         FROM Persoon
         WHERE Id = :Id";
 
@@ -108,6 +111,9 @@ var_dump($result);
         <br>
         <label for="residence">Woonplaats</label><br>
         <input type="text" id="residence" name="residence" value="<?= $result->WP ?>"><br>
+        <br>
+        <label for="zipcode">Postcode</label><br>
+        <input type="text" id="zipcode" name="zipcode" value="<?= $result->PC ?>"><br>
         <br>
         <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
         <input type="submit" value="Verstuur">
