@@ -76,9 +76,7 @@ $result = $statement->fetch(PDO::FETCH_OBJ);
 
 var_dump($result);
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

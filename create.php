@@ -62,6 +62,3 @@ $statement->execute();
 echo "Het opslaan is gelukt";
 // Link door naar read.php voor een overzicht van de gegevens in tabel Persoon
 header('Refresh:4; url=read.php');
-
-
-

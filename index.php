@@ -40,11 +40,6 @@
         <input type="text" id="country" name="country">
         <br>
         <input type="submit" value="Verstuur">
-
     </form>
-
-
-
-    
 </body>
 </html>
