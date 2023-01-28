@@ -30,6 +30,9 @@
         <label for="house">Huisnummer</label><br>
         <input type="text" id="house" name="house">
         <br>
+        <label for="residence">Woonplaats</label><br>
+        <input type="text" id="residence" name="residence">
+        <br>
         <input type="submit" value="Verstuur">
 
     </form>
