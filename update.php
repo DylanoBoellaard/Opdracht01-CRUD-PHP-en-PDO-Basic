@@ -22,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 SET Voornaam = :Voornaam,
                     Tussenvoegsel = :Tussenvoegsel,
                     Achternaam = :Achternaam,
-                    Mobiel = :Mobiel
+                    Mobiel = :Mobiel,
+                    Straatnaam = :Straatnaam
 
                 WHERE Id = :Id";
 
@@ -32,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $statement->bindValue(':Tussenvoegsel', $_POST['infix'], PDO::PARAM_STR);
         $statement->bindValue(':Achternaam', $_POST['lastname'], PDO::PARAM_STR);
         $statement->bindValue(':Mobiel', $_POST['phone'], PDO::PARAM_STR);
+        $statement->bindValue(':Straatnaam', $_POST['street'], PDO::PARAM_STR);
 
         $statement->execute();
 
@@ -48,6 +50,7 @@ $sql = "SELECT Id
               ,Tussenvoegsel as TV
               ,Achternaam as AN
               ,Mobiel as MB
+              ,Straatnaam as ST
         FROM Persoon
         WHERE Id = :Id";
 
@@ -88,12 +91,14 @@ var_dump($result);
         <label for="lastname">Achternaam:</label><br>
         <input type="text" id="lastname" name="lastname" value="<?= $result->AN ?>"><br>
         <br>
-        <label for="phone">Telefoonnummer:</label>
-        <input type="text" id="phone" name="phone" value="<?= $result-> MB?>"><br>
+        <label for="phone">Telefoonnummer:</label><br>
+        <input type="text" id="phone" name="phone" value="<?= $result->MB ?>"><br>
+        <br>
+        <label for="street">Straatnaam</label><br>
+        <input type="text" id="street" name="street" value="<?= $result->ST ?>"><br>
         <br>
         <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
         <input type="submit" value="Verstuur">
-
     </form>    
 </body>
 </html>
