@@ -27,6 +27,9 @@
         <label for="street">Straatnaam</label><br>
         <input type="text" id="street" name="street">
         <br>
+        <label for="house">Huisnummer</label><br>
+        <input type="text" id="house" name="house">
+        <br>
         <input type="submit" value="Verstuur">
 
     </form>
@@ -36,7 +39,3 @@
     
 </body>
 </html>
-
-<?php
-    echo "1" + 1;
-?>

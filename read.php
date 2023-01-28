@@ -28,6 +28,7 @@
                   ,Achternaam
                   ,Mobiel
                   ,Straatnaam
+                  ,Huisnummer
             FROM Persoon
             ORDER BY Id";
 
@@ -49,6 +50,7 @@
                     <td>$info->Achternaam</td>
                     <td>$info->Mobiel</td>
                     <td>$info->Straatnaam</td>
+                    <td>$info->Huisnummer</td>
                     <td>
                         <a href='delete.php?id={$info->Id}'>
                             <img src='img/b_drop.png' alt='kruis'>
@@ -75,6 +77,7 @@
         <th>Achternaam</th>
         <th>Mobiel</th>
         <th>Straatnaam</th>
+        <th>Huisnummer</th>
         <th></th>
         <th></th>   
     </thead>
