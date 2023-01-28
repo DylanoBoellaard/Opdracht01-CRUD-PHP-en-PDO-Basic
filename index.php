@@ -36,6 +36,9 @@
         <label for="zipcode">Postcode</label><br>
         <input type="text" id="zipcode" name="zipcode">
         <br>
+        <label for="country">Landnaam</label><br>
+        <input type="text" id="country" name="country">
+        <br>
         <input type="submit" value="Verstuur">
 
     </form>
