@@ -2,6 +2,6 @@
 // Hieronder staan de inloggegevens voor de database
 
 $dbHost = 'localhost';
-$dbName = 'Php-pdo-crud-2209b';
-$dbUser = 'rra_2209b';
-$dbPass = 'zU(7eT(GprD]YRIt';
+$dbName = 'Backend-leerjaar1-periode2';
+$dbUser = 'gebruiker';
+$dbPass = 'luWJEM.E1YvmmK7p';

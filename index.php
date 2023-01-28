@@ -10,7 +10,7 @@
 </head>
 <body>
     <h3>PDO CRUD</h3>
-
+    <a href="read.php">DB table</a>
     <form action="create.php" method="post">
         <label for="firstname">Voornaam:</label><br>
         <input type="text" id="firstname" name="firstname"><br>
@@ -21,6 +21,9 @@
         <label for="lastname">Achternaam:</label><br>
         <input type="text" id="lastname" name="lastname"><br>
         <br>
+        <label for="phone">Mobiel</label><br>
+        <input type="text" id="phone" name="phone">
+        <br>
         <input type="submit" value="Verstuur">
 
     </form>
@@ -30,3 +33,7 @@
     
 </body>
 </html>
+
+<?php
+    echo "1" + 1;
+?>

@@ -26,6 +26,7 @@
                   ,Voornaam
                   ,Tussenvoegsel
                   ,Achternaam
+                  ,Mobiel
             FROM Persoon
             ORDER BY Id";
 
@@ -45,15 +46,22 @@
                     <td>$info->Voornaam</td>
                     <td>$info->Tussenvoegsel</td>
                     <td>$info->Achternaam</td>
+                    <td>$info->Mobiel</td>
                     <td>
                         <a href='delete.php?id={$info->Id}'>
                             <img src='img/b_drop.png' alt='kruis'>
+                        </a>
+                    </td>
+                    <td> 
+                        <a href='update.php?id={$info->Id}'>
+                            <img src='img/b_edit.png' alt='potlood'>
                         </a>
                     </td>
                   </tr>";
     }
 ?>
 
+<a href="index.html">Home page</a>
 <h3>Persoonsgegevens</h3>
 <a href="index.php"><input type="button" value="Nieuw persoon"></a>
 <br><br>
@@ -63,7 +71,9 @@
         <th>Voornaam</th>
         <th>Tussenvoegsel</th>
         <th>Achternaam</th>
+        <th>Mobiel</th>
         <th></th>
+        <th></th>   
     </thead>
     <tbody>
         <?= $rows; ?>   

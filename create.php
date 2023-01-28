@@ -24,11 +24,13 @@ try {
 $sql = "INSERT INTO Persoon (Id
                             ,Voornaam
                             ,Tussenvoegsel
-                            ,Achternaam)
+                            ,Achternaam
+                            ,Mobiel)
         VALUES              (NULL
                             ,:firstname
                             ,:infix
-                            ,:lastname);";
+                            ,:lastname
+                            ,:mobiel);";
 
 // Maak de sql-query gereed om te worden afgevuurd op de mysql-database
 $statement = $pdo->prepare($sql);
@@ -37,6 +39,7 @@ $statement = $pdo->prepare($sql);
 $statement->bindValue(':firstname', $_POST['firstname'], PDO::PARAM_STR);
 $statement->bindValue(':infix', $_POST['infix'], PDO::PARAM_STR);
 $statement->bindValue(':lastname', $_POST['lastname'], PDO::PARAM_STR);
+$statement->bindValue(':mobiel', $_POST['phone'], PDO::PARAM_STR);
 
 // Voer de sql-query uit op de database
 $statement->execute();
@@ -44,5 +47,6 @@ $statement->execute();
 echo "Het opslaan is gelukt";
 // Link door naar read.php voor een overzicht van de gegevens in tabel Persoon
 header('Refresh:4; url=read.php');
+
 
 
